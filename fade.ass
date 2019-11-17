@@ -15,4 +15,9 @@ Style: Default,Arial,20,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,0,0,0,0,100,
 
 [Events]
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
-Dialogue: 0,0:00:15.00,0:00:20.00,Default,,0,0,0,,{\fad(500,500)}Summer Video
+Dialogue: 0,0:00:00.00,0:00:10.00,Default,,0,0,0,,{\fad(500,500)}According to all known laws of aviation
+Dialogue: 0,0:00:10.00,0:00:20.00,Default,,0,0,0,,{\fad(500,500)}there is no way that a bee should be able
+Dialogue: 0,0:00:20.00,0:00:30.00,Default,,0,0,0,,{\fad(500,500)}to fly. It's tiny wings are too small
+Dialogue: 0,0:00:30.00,0:00:40.00,Default,,0,0,0,,{\fad(500,500)}to get its fat little body off the ground
+Dialogue: 0,0:00:40.00,0:00:50.00,Default,,0,0,0,,{\fad(500,500)}The bee of course, flies anyway for bees
+Dialogue: 0,0:00:50.00,0:01:00.00,Default,,0,0,0,,{\fad(500,500)}don't care what humans think are impossible
