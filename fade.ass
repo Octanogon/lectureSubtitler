@@ -15,9 +15,21 @@ Style: Default,Arial,20,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,0,0,0,0,100,
 
 [Events]
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
-Dialogue: 0,0:00:00.00,0:00:10.00,Default,,0,0,0,,{\fad(500,500)}According to all known laws of aviation
-Dialogue: 0,0:00:10.00,0:00:20.00,Default,,0,0,0,,{\fad(500,500)}there is no way that a bee should be able
-Dialogue: 0,0:00:20.00,0:00:30.00,Default,,0,0,0,,{\fad(500,500)}to fly. It's tiny wings are too small
-Dialogue: 0,0:00:30.00,0:00:40.00,Default,,0,0,0,,{\fad(500,500)}to get its fat little body off the ground
-Dialogue: 0,0:00:40.00,0:00:50.00,Default,,0,0,0,,{\fad(500,500)}The bee of course, flies anyway for bees
-Dialogue: 0,0:00:50.00,0:01:00.00,Default,,0,0,0,,{\fad(500,500)}don't care what humans think are impossible
+Dialogue: 0,0:00:00.00,0:00:10.00,Default,,0,0,0,,{\fad(500,500)}ok so where does integration by parts come from well it comes from the product
+Dialogue: 0,0:00:10.00,0:00:20.00,Default,,0,0,0,,{\fad(500,500)}product or if you want to sound fancy for
+Dialogue: 0,0:00:20.00,0:00:30.00,Default,,0,0,0,,{\fad(500,500)}if I have two functions f and G
+Dialogue: 0,0:00:30.00,0:00:40.00,Default,,0,0,0,,{\fad(500,500)}I multiply then and then I differentiate and thanks G Prime is f prime plus Jeep
+Dialogue: 0,0:00:40.00,0:00:50.00,Default,,0,0,0,,{\fad(500,500)}which means that sgps X G prime = f x g
+Dialogue: 0,0:00:50.00,0:01:00.00,Default,,0,0,0,,{\fad(500,500)}prime - prime X G and if I integrate both sides
+Dialogue: 0,0:01:00.00,0:01:10.00,Default,,0,0,0,,{\fad(500,500)}then I end up with the integration by parts which is best
+Dialogue: 0,0:01:10.00,0:01:20.00,Default,,0,0,0,,{\fad(500,500)}the XX if the functions of x = f f x g minor
+Dialogue: 0,0:01:20.00,0:01:30.00,Default,,0,0,0,,{\fad(500,500)}f-prime x GTX ok this is the version of indefinite integrals
+Dialogue: 0,0:01:30.00,0:01:40.00,Default,,0,0,0,,{\fad(500,500)}you can have a definite into love versions where you put the limits of integration
+Dialogue: 0,0:01:40.00,0:01:50.00,Default,,0,0,0,,{\fad(500,500)}let me spell it out so this is the definite in
+Dialogue: 0,0:01:50.00,0:02:00.00,Default,,0,0,0,,{\fad(500,500)}alright so let's do a couple of eggs
+Dialogue: 0,0:02:00.00,0:02:10.00,Default,,0,0,0,,{\fad(500,500)}so the first thing
+Dialogue: 0,0:02:10.00,0:02:20.00,Default,,0,0,0,,{\fad(500,500)}so I suppose I want to integrate x squared sign x
+Dialogue: 0,0:02:20.00,0:02:30.00,Default,,0,0,0,,{\fad(500,500)}so this would solve so this would be
+Dialogue: 0,0:02:30.00,0:02:40.00,Default,,0,0,0,,{\fad(500,500)}this gives the solution to DY
+Dialogue: 0,0:02:40.00,0:02:50.00,Default,,0,0,0,,{\fad(500,500)}x = x squared sign x ok so we need to be patient by parts you have
+Dialogue: 0,0:02:50.00,0:03:00.00,Default,,0,0,0,,{\fad(500,500)}which one is f and which ones now clearly I would like to decrease the power here I know I can never

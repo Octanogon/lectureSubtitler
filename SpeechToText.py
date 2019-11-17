@@ -8,21 +8,42 @@ from subtitler import Video
 import numpy as np
 import datetime
 
-class Speech_To_Text:
+class Speech_To_Text():
+
+    INTERVAL_FOR_SINGLE_SUBTITLE = 10 # sets amount of time that a subtitle will show
+    
     def __init__(self, video_source):
-        INTERVAL_FOR_SINGLE_SUBTITLE = 10 # sets amount of time that a subtitle will show
-        length = len(AudioSegment.from_file(video_source))*1000
+        
+        self.length = len(AudioSegment.from_file(video_source))*1000
+        
         self.convert_video_to_audio(video_source, "audio_file")
-        self.create_n_second_audio_file("audio_file.wav", INTERVAL_FOR_SINGLE_SUBTITLE)
-        subtitles = self.text_output_from_directory_of_audio("audio_file_words")
-        video_with_subtitles = Video(video_source)
+        
+        self.create_n_second_audio_file("audio_file.wav", self.INTERVAL_FOR_SINGLE_SUBTITLE)
+        
+        self.subtitles = self.text_output_from_directory_of_audio("audio_file_words")
+        
+        self.video_with_subtitles = Video(video_source)
+        
+        self.run()
+        
+    def run(self):
+        
+        subtitles = self.subtitles
+        video_with_subtitles = self.video_with_subtitles
+        
         for i, sub in enumerate(subtitles):
+        
             if sub != None:
-                if (i+1)*INTERVAL_FOR_SINGLE_SUBTITLE < length:
-                    video_with_subtitles.addSubtitle(sub, str(datetime.timedelta(seconds=i*INTERVAL_FOR_SINGLE_SUBTITLE))+".00", str(datetime.timedelta(seconds=(i+1)*INTERVAL_FOR_SINGLE_SUBTITLE))+".00")
+            
+                if (i+1)*self.INTERVAL_FOR_SINGLE_SUBTITLE < self.length:
+
+                    self.video_with_subtitles.addSubtitle(sub, str(datetime.timedelta(seconds=i*self.INTERVAL_FOR_SINGLE_SUBTITLE))+".00", str(datetime.timedelta(seconds=(i+1)*self.INTERVAL_FOR_SINGLE_SUBTITLE))+".00")
                 else:
-                    video_with_subtitles.addSubtitle(sub, str(datetime.timedelta(seconds=i*INTERVAL_FOR_SINGLE_SUBTITLE))+".00", str(datetime.timedelta(seconds=length))+".00")
-        video_with_subtitles.createVideo()
+                    self.video_with_subtitles.addSubtitle(sub, str(datetime.timedelta(seconds=i*self.INTERVAL_FOR_SINGLE_SUBTITLE))+".00", str(datetime.timedelta(seconds=self.length))+".00")
+        
+        
+        self.video_with_subtitles.createVideo()
+
 
     def convert_video_to_audio(self, source, destination):
         AudioSegment.from_file(source).export(destination+".wav", format="wav")
@@ -79,5 +100,3 @@ class Speech_To_Text:
                 list_of_outputs.append(None)
         return list_of_outputs
 
-
-Speech_To_Text("JamesAcaster.mp4")
